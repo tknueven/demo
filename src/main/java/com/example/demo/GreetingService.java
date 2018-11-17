@@ -9,6 +9,6 @@ public class GreetingService {
 
     public Greeting sayHello(String name) {
         Response response = dao.getResponse();
-        return new Greeting(response.getCounter(), String.format(response.getTemplate(), name));
+        return new Greeting(String.format(response.getTemplate(), name));
     }
 }
